@@ -1,0 +1,319 @@
+/* Reset default margin and padding */
+body,
+ul {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+/* Navigation Bar */
+.bodyy {
+  background-image: url("./images/Pest\ Control\ Services\ In\ Dhaka\ City\ \ -\ 01781695325.jfif");
+  background-size: cover;
+  background-position: center;
+
+  color: white;
+}
+.nav {
+  /* background-image: url(./); */
+  background-position: center;
+  color: white;
+  padding: 0px;
+  display: flex;
+
+ 
+}
+
+/* Logo */
+.logo img {
+  max-width: 150px; /* Adjust the logo width */
+  height: 150px;
+  display: block;
+  margin: 0 auto 0px; /* Center the logo and add margin */
+}
+
+/* Navigation Links */
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 700px;
+}
+
+.nav ul li {
+  margin: 0 20px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+/* Top-level list */
+.nav ul {
+  list-style: none;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav ul li {
+  margin: 0 20px;
+  padding: 10px;
+  position: relative; /*Set position relative for the sublists */
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  display: block;
+}
+
+/* Sublists */
+.nav ul ul {
+  display: none; /* Hide sublists by default */
+  position: absolute;
+  top: 100%; /* Position below the parent item */
+  left: 10%;
+  background-color: lightblue; /* Background color for sublists */
+  z-index: 1;
+  width: 200px; /* Set a width for sublists */
+}
+
+.nav ul ul li {
+  margin: 0;
+}
+
+.nav ul li:hover > ul {
+  display: block; /* Display sublist on hover */
+}
+
+/* Text Section */
+.text-section {
+ text-align: justify;
+ padding: 100px;
+}
+
+.text-section h1 {
+  font-size: 50px;
+}
+
+.text-section p {
+  font-size: 30px;
+  line-height: 1.6;
+  font-weight: 700;
+}
+.text-content2 p {
+  font-size: 30px;
+  line-height: 1.6;
+  font-weight: 0;
+  color: dodgerblue;
+}
+.text-content2{
+  text-align: justify;
+  padding: 100px;
+}
+
+.header {
+  font-size: 35px;
+  text-align: center;
+  color: dodgerblue;
+}
+
+.service-icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.service-item {
+  text-align: center;
+  transition: transform 0.3s ease-in-out; /* Add transition effect */
+}
+
+.service-item img {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.service-item p {
+  margin-top: 10px;
+  color: dodgerblue;
+  font-size: 25px;
+}
+
+/* Effect on click */
+.service-item:hover {
+  transform: scale(1.1); /* Increase size on hover */
+}
+
+/* Your existing styles... */
+
+.contact {
+  /* Your styles for the contact section */
+  margin: 100px ;
+}
+
+.contact-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: dodgerblue;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color: #07284c;
+}
+
+/* Your existing styles... */
+
+.footer {
+  background-color: #36315f;
+  color: #fff;
+  padding: 10px 0;
+  margin-top: 10px;
+  text-align: rleftight;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.footer-section {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  line-height: 2;
+}
+
+.footer-section h3 {
+  margin-bottom: 20px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 10px;
+  border-top: 1px solid #444;
+}
+
+/* For screens smaller than 768px (e.g., tablets and phones) */
+@media (max-width: 768px) {
+  .nav {
+    display: block;
+    text-align: center;
+  }
+
+  .nav ul {
+    display: none;
+    padding: 0;
+  }
+
+  .nav li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .nav li ul {
+    display: block;
+    margin-left: 20px;
+  }
+
+  .nav li ul li {
+    margin-bottom: 5px;
+  }
+
+  .text-section {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .service-icons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .service-item img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* Add this CSS to your existing stylesheet or styles.css */
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 60px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 50px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.whatsapp-float:hover {
+  background-color: #128c7e;
+}
